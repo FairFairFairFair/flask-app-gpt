@@ -8,13 +8,13 @@ import openai
 openai.api_key = "your-openai-api-key"
 
 # Define the text you want to analyze or interact with
-text = "I am very happy today!"
+text = "ฝนกกลางคืนรุ้งกินน้ำ"
 
 # Make a request to the OpenAI GPT-3.5 API
 response = openai.ChatCompletion.create(
     model="gpt-3.5-turbo-0125",
     messages=[
-        {"role": "system", "content": "Analyze the sentiment of the following text:"},
+        {"role": "system", "content": "ใช้ชื่อเพลงต่อไปนี้แต่งเพลงให้หน่อย"},
         {"role": "user", "content": text}
     ]
 )
